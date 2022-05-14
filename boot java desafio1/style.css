@@ -1,0 +1,47 @@
+.acessoSenha{
+    padding: 30px 40px 30px 40px;
+    margin: 120px 100px 120px 100px;
+    border: 2px solid black;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: mediumaquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+
+#botao{
+    border: 2px solid black;
+    color: white;
+    background-color: darkblue;
+    padding: 15px 25px 15px 25px;
+}
+
+#botao:hover{
+    cursor: pointer;
+    background-color: rgb(89, 89, 255);
+}
+
+#menu{
+    height: 440px;
+    width: 250px;
+    flex-direction: column;
+    border: solid 2px black;
+    padding: 30px 10px 10px 10px;
+    margin: 0px 0px 300px 0px ;
+}
+
+.option{
+    text-align: start;
+    justify-content: center;
+    margin: 5px;
+    padding: 8px;
+}
+
+.option:hover{
+    cursor: pointer;
+    color: rgb(148, 5, 5);
+    background-color: rgb(230, 238, 116);
+    transition: 1.5s;
+}
