@@ -1,47 +1,81 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: row;
+}
+
 .acessoSenha{
+    width: 20%;
+    height: 30%;
     padding: 30px 40px 30px 40px;
-    margin: 120px 100px 120px 100px;
+    margin-top: 200px;
+    margin-left: 40%;
     border: 2px solid black;
     align-items: center;
     flex-direction: column;
     text-align: center;
     background-color: mediumaquamarine;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }
 
+input{
+    border-radius: 5px;
+    margin: 0%;
+}
+
+p{
+    margin: 3px;
+    padding: 5px;
+}
 
 #botao{
     border: 2px solid black;
+    border-radius: 8px;
     color: white;
-    background-color: darkblue;
+    background-color: rgb(62, 62, 221);
     padding: 15px 25px 15px 25px;
 }
 
 #botao:hover{
     cursor: pointer;
-    background-color: rgb(89, 89, 255);
+    background-color: crimson;
+    transition: 1s;
 }
 
+
 #menu{
-    height: 440px;
-    width: 250px;
+    height: 100%;
+    width: 15%;
+    display:block;
+    margin: auto 20px auto 40px;
     flex-direction: column;
-    border: solid 2px black;
-    padding: 30px 10px 10px 10px;
-    margin: 0px 0px 300px 0px ;
+    border-right: solid 2px black;
+    padding: 30px 10px 180px 10px;
+    margin: 10px 10px 10px 10px ;
+    background-color: rgb(232, 248, 140);
+}
+
+.material-symbols-outlined{
+    flex-direction: row;
+}
+
+#areaTrabalho{
+    width: 85%;
+    background-color: red;
 }
 
 .option{
     text-align: start;
     justify-content: center;
+    flex-direction: row;
     margin: 5px;
     padding: 8px;
 }
 
 .option:hover{
     cursor: pointer;
-    color: rgb(148, 5, 5);
-    background-color: rgb(230, 238, 116);
-    transition: 1.5s;
+    color: yellow;
+    background-color: crimson;
+    transition: 0.5s;
+    border: 2px yellow solid;
+    border-radius: 8px;
 }
