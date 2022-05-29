@@ -6,29 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>FlashJS</title>
+
 </head>
+<script src='..\boot java desafio1\usuarioClienteProduto\script.js'></script>
+
 <body>
-
-    <div class="acessoSenha">
+    <main class="acessoSenha">
         <form name="acesso">
-            <p>
-
-                <label for="usuario">
-                    <span>Usuário</span>
-            </p>
-                <input type="text" class="input_text" name="usuario" id="usuario">
-            </label>
-            <p>
-                <label for="senha">
-                    <span>Senha</span>
-                </p>
-                <input type="password" name="senha">
-            </label>
-            <p></p>
-            <a href="panel.html">
-              <input id="botao" type="button" value="ENTRAR">
-            </a>
+                <label for="usuario">Usuário </label>
+                    <input type="text" class="input_text" name="usuario" id="usuario">
+                <label for="senha">Senha </label>
+                    <input type="password" name="senha" id="senha">
+                  <input id="botao" type="button" value="ENTRAR" onclick="fazerLogin()">
         </form>
-    </div>
+    </main>
 </body>
 </html>

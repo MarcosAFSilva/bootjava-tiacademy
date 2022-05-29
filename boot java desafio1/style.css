@@ -1,7 +1,13 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    flex-direction: row;
+*{
+    margin: 0;
+    padding: 0;
 }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    display: flex;
+}
+
 
 .acessoSenha{
     width: 20%;
@@ -17,14 +23,11 @@ body{
     font-size: 18px;
 }
 
+
 input{
     border-radius: 5px;
-    margin: 0%;
-}
-
-p{
-    margin: 3px;
-    padding: 5px;
+    margin: 10px 5px 10px 5px;
+    width: 100%;
 }
 
 #botao{
@@ -33,42 +36,43 @@ p{
     color: white;
     background-color: rgb(62, 62, 221);
     padding: 15px 25px 15px 25px;
+    margin-top: 5px;
 }
 
 #botao:hover{
     cursor: pointer;
     background-color: crimson;
-    transition: 1s;
 }
 
+#botao:active{
+    background-color: white;
+    border: 3px solid blue;
+    color: blue;
+}
 
-#menu{
-    height: 100%;
-    width: 15%;
-    display:block;
-    margin: auto 20px auto 40px;
-    flex-direction: column;
+nav{
+    margin: 15px;
+    padding: 5px;
+    width: 240px;
+    display: block;
     border-right: solid 2px black;
-    padding: 30px 10px 180px 10px;
-    margin: 10px 10px 10px 10px ;
     background-color: rgb(232, 248, 140);
 }
 
-.material-symbols-outlined{
-    flex-direction: row;
+main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#areaTrabalho{
-    width: 85%;
-    background-color: red;
-}
 
 .option{
     text-align: start;
     justify-content: center;
-    flex-direction: row;
-    margin: 5px;
-    padding: 8px;
+    padding: 5px;
+    list-style-type:none;
+    list-style:none;
 }
 
 .option:hover{
@@ -78,4 +82,114 @@ p{
     transition: 0.5s;
     border: 2px yellow solid;
     border-radius: 8px;
+}
+
+.option:active{
+    background-color: white;
+    color: blue;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecharJanela{
+    background-color: crimson;
+    color: white;
+    width: 10%;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.fecharJanela:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+.fecharJanela:active{
+    background-color: yellow;
+}
+
+
+h1{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+form{
+    border: 2px solid gray;
+    width: 50%;
+    padding: 25px;
+    margin: 20px;
+}
+
+
+#controleCadastro{
+    display: flex;
+    margin: 10px;
+}
+
+.inputCadastro{
+    width: 80%;
+    height: 20px;
+}
+
+.moverCadastro{
+    background-color: purple;
+    color: white;
+    padding: 3px;
+}
+.moverCadastro:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+.moverCadastro:active{
+    background-color: yellow;
+}
+
+.novoCadastro{
+    background-color: blue;
+    color: white;
+    padding: 3px;
+}
+.novoCadastro:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+.novoCadastro:active{
+    background-color: yellow;
+}
+
+.salvaCadastro{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    
+}
+.salvaCadastro:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+.salvaCadastro:active{
+    background-color: yellow;
+}
+
+
+#janelaConsulta{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+thead{
+    display: flex;
+}
+
+th{
+    justify-content:stretch;
+    border-left: 2px black solid;
+    padding: 5%;
 }

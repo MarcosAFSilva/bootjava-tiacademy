@@ -1,34 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Painel - FlashJS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+    @48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+    @20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+    @48,400,0,0" />
 </head>
+<script src='..\boot java desafio1\usuarioClienteProduto\script.js'></script>
+
 <body>
-   <nav id="menu">
-        <div class="option">
-           <link rel="stylesheet"
-            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
-@48,400,0,0" />
-            <span class="material-symbols-outlined">group_add</span> - CLIENTES
+    <nav>
+        <ul>
+            <li class="option" id="opClientes"><span class="material-symbols-outlined">group_add</span> CLIENTES</li>
+            <li class="option" id="opProdutos"><span class="material-symbols-outlined">shopping_cart</span> PRODUTOS
+            </li>
+            <li class="option" id="opPedidos"><span class="material-symbols-outlined">shopping_cart</span> PEDIDOS</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="janelaCadastroClientes">
+            <form action="cadastroClientes" id="cadClientes">
+                <div id="cabecalho">
+                    <h1>Clientes</h1>
+                    <input type="button" value="X" class="fecharJanela">
+                </div>
+
+                <label for="codigoCliente">Código</label>
+                <input type="number" class="inputCadastro" name="Código">
+                <label for="nomeCliente">Nome</label>
+                <input type="text" class="inputCadastro">
+                <label for="dataCadastro">Data de Cadastro</label>
+                <input type="date" class="inputCadastro">
+                <div id="controleCadastro">
+                    <input class="moverCadastro" type="button" value="<">
+                    <input class="moverCadastro" type="button" value=">">
+                    <input class="novoCadastro" type="button" value="Novo">
+                    <input class="salvaCadastro" type="button" value="Salvar">
+            </form>
         </div>
-        <div class="option">
-            <link rel="stylesheet"
-            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
-@20..48,100..700,0..1,-50..200" />
-            <span class="material-symbols-outlined">shopping_cart</span> - PRODUTOS
+        <div class="janelaCadastroProdutos">
+            <form action="cadastroProdutos" id="cadProdutos">
+                <div id="cabecalho">
+                    <h1>Produtos</h1>
+                    <input type="button" value="X" class="fecharJanela">
+                </div>
+
+                <label for="codigoProduto">Código</label>
+                <input type="number" class="inputCadastro" name="Código">
+                <label for="descProduto">Descriçao</label>
+                <input type="text" class="inputCadastro">
+                <label for="precoProduto">Preço</label>
+                <input type="number" class="inputCadastro">
+                <label for="qtdProduto">Quantidade</label>
+                <input type="number" class="inputCadastro">
+                <div id="controleCadastro">
+                    <input class="moverCadastro" type="button" value="<">
+                    <input class="moverCadastro" type="button" value=">">
+                    <input class="novoCadastro" type="button" value="Novo">
+                    <input class="salvaCadastro" type="button" value="Salvar">
+            </form>
+
+
         </div>
-            <div class="option">
-             <link rel="stylesheet"
-            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
-@48,400,0,0" />
-            <span class="material-symbols-outlined">shopping_cart</span> - PEDIDOS
+
+        <div id="janelaConsulta">
+            <div id="cabecalho">
+                <h1>Pedidos</h1>
+                <input type="button" value="X" class="fecharJanela">
             </div>
-</nav>
+            <hr />
+            <label for="codigoClientePesquisar">Código do Cliente</label>
+            <input type="number" class="inputCadastro">
+            <label for="nomeClientePesquisar">Cliente</label>
+            <input type="text" class="inputCadastro">
+            <hr />
+
+
+            <table>
+                <tbody>
+                    <thead>
+                        <th>Item</th>
+                        <th>Descriçao</th>
+                        <th>Preço</th>
+                        <th>Qtd</th>
+                        <th>Subtotal</th>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
 
 </body>
+
 </html>
